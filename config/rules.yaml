@@ -1,0 +1,4 @@
+service: rlm-incident
+port: 8798
+database:
+  url: sqlite:///data/rlm-incident.sqlite
