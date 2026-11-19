@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 
 app = Flask(__name__)
 
-PORT = int(os.environ.get("PORT", 8798))
+PORT = int(os.environ.get("PORT", 8799))
 INCIDENTS: dict = {}
 
 
