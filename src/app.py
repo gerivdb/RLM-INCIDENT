@@ -2,6 +2,14 @@ from flask import Flask, jsonify, request
 import os
 from datetime import datetime, timezone
 
+from rlm_common import (
+    causal_validator,
+    curriculum_validator,
+    meta_coherence_fixer,
+    narrative_generator,
+    rootx_client,
+)
+
 app = Flask(__name__)
 
 PORT = int(os.environ.get("PORT", 8799))
